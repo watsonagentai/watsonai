@@ -1,0 +1,5 @@
+services:
+  watson:
+    build: .
+    container_name: watson
+    env_file: .env
