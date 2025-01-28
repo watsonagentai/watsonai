@@ -1,12 +1,8 @@
 from logs_config import get_logger
+from category_mapping import SITE_CATEGORIES
 
 logger = get_logger(__name__)
 
-SITE_CATEGORIES = {
-    "Behance": ["creative", "design"],
-    "8tracks": ["music", "streaming"],
-    # ...
-}
 
 DEFAULT_CATEGORIES = ["unknown"]
 
