@@ -1,5 +1,6 @@
 services:
   watson:
     build: .
+    tty: true
     container_name: watson
     env_file: .env

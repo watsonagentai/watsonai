@@ -9,6 +9,7 @@ logger = get_logger(__name__)
 load_dotenv()
 API_KEY = os.getenv("OPENAI_API_KEY")
 
+
 def interpret_histogram(histogram: dict) -> str:
     if not API_KEY:
         logger.error("No OPENAI_API_KEY set. Cannot call OpenAI.")

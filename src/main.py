@@ -11,6 +11,12 @@ from openai_wrapper import interpret_histogram
 
 logger = get_logger('Watson')
 
+def interpret_ansi_codes(text: str) -> str:
+    """
+    Replace literal '\\x1b' with the actual escape character '\x1b',
+    so ANSI codes render as colors.
+    """
+    return text.replace("\\x1b", "\x1b")
 
 def main():
     load_dotenv()
@@ -42,8 +48,9 @@ def main():
         # 4) Use new OpenAI approach
         summary = interpret_histogram(histogram)
 
+        summary_colored = interpret_ansi_codes(summary)
         # 5) Log final summary in bright white
-        logger.info(f"\x1b[97m\n----- FINAL SUMMARY for '{username}' -----\n{summary}\n\x1b[0m")
+        logger.info(f"\x1b[97m\n----- FINAL SUMMARY for '{username}' -----\n{summary_colored}\n\x1b[0m")
 
 
 if __name__ == "__main__":
