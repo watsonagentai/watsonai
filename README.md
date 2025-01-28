@@ -1,7 +1,7 @@
 # WatsonAI 🔎  
 [![GitHub stars](https://img.shields.io/github/stars/sherlock-project/sherlock?style=social)](https://github.com/sherlock-project/sherlock/stargazers)
-[![Discord](https://img.shields.io/discord/12345.svg?label=Sherlock+Discord)](https://discord.gg/sherlock)
-[![Twitter Follow](https://img.shields.io/twitter/follow/sherlockproj?style=social)](https://twitter.com/sherlockproj)
+[![Discord](https://img.shields.io/discord/12345.svg?label=Watson+Discord)](https://discord.gg/xgDqHaDE)
+[![Twitter Follow](https://img.shields.io/twitter/follow/watsonagentai?style=social)](https://x.com/watsonagentai)
 
 **Watson** is a Dockerized Python application that leverages the [Sherlock](https://github.com/sherlock-project/sherlock) engine to locate user accounts across numerous sites, categorize them, and generate an AI-driven profile summary. Sherlock’s partial output is streamed live (in color), providing real-time feedback during scanning.
 
